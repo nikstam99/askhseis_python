@@ -1,5 +1,6 @@
-print ("Δώσε κείμενο σε ascii")
-a = input ()
+print ("Δώσε αρχείο κειμένου σε ascii")
+file = open(input ())
+a = file.read()
 x = 1
 b =  [a[i:i+x] for i in range (0, len(a), x)]
 c = []
