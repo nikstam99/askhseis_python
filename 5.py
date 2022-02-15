@@ -1,5 +1,6 @@
-print ("Δώσε κείμενο σε ascii")
-a = input ()
+print ("Δώσε αρχείο κειμένου σε ascii")
+file = open(input ())
+a = file.read()
 b = (a.lower())
 whitelist = set('abcdefghijklmnopqrstuvwxyz αβγδεζηθικλμνξοπρστυφχψω')
 bb = ''.join(filter(whitelist.__contains__, b))
